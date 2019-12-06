@@ -1,3 +1,6 @@
+# File Folder
+build
+
 # Prerequisites
 *.d
 
@@ -35,3 +38,6 @@
 # Idea
 .Idea
 cmake-build-debug
+
+# Other
+.DS_Store
