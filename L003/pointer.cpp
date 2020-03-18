@@ -3,6 +3,9 @@
 
 using namespace std;
 
+/**
+ * 指针 带星号输出是值，不带星号是内存地址
+ */
 int main() {
   string arr[7] = {"lxy", "is", "?"};
   string *apointer = arr;
@@ -14,6 +17,8 @@ int main() {
   cout << "*apointer: " << *apointer << endl;
   cout << "*npointer: " << *npointer << endl;
 
+  cout << "\n";
+
   struct person {
     string name;
     int age;
@@ -22,6 +27,8 @@ int main() {
   person p = {"lxy", 25};
   person *strucPointer = &p;
   cout << "strucPointer: " << strucPointer << endl;
+
+  cout << "\n";
 
   int *pt = new int;
   *pt = 1001;
@@ -32,6 +39,8 @@ int main() {
   int *pArr = new int[10];
   cout << "0: " << pArr[0] << ", 1: " << pArr[1] << endl;
   delete []pArr;
+  
+  cout << "\n";
 
   int num = 123;
   int *pNum = &num;
@@ -40,6 +49,8 @@ int main() {
   *pNum += 1;
   cout << "after *pNum: " << *pNum << endl;
   cout << "after pNum: " << pNum << endl;
+
+  cout << "\n";
 
   int mylist[3] = {100, 200, 300};
   int *pList = mylist;
